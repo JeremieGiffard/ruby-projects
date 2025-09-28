@@ -1,4 +1,7 @@
-def Bubble_Sort(random_array)
+# frozen_string_literal: true
+
+# algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order.
+def bubble_sort(random_array)
   initial_value = random_array[0]
   initial_index = 0
   # loop array
