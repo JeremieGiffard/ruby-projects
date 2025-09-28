@@ -2,7 +2,7 @@ def caesar_cipher(string_to_encrypt, shift_number = 0)
   # CREER UN HASH AVEC TOUTES LES LETTRES DE L'ALPHABET => NUMBRE INDEX
   alphabet = %w[a b c d e f g h i j k l m n o p q r s t u
                 v w x y z]
-  string_to_return = ''
+  string_to_return = ""
 
   string_to_encrypt.each_char do |ch|
     index = alphabet.find_index(ch.downcase)
@@ -30,4 +30,4 @@ def shift_alphabet(index, shift_number)
   shift_to
 end
 
-caesar_cipher('What a string!', 5)
+caesar_cipher("What a string!", 5)
